@@ -19,7 +19,7 @@ class CreatePublishersTable extends Migration
 
             $table->id();
             $table->string('name');
-            $table->year('established');
+            $table->integer('established', 4);
             $table->timestamps();
         });
     }
